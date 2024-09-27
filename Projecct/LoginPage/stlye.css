@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+
+  /* width: 100vh; */
+  /* margin: 100px auto; */
+  /* border: 2px solid red; */
+  /* height: 100vh; */
+  width: 100%;
+}
+
+/* Navbar css start here */
+
+.navbar-container {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  /* justify-self: start; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+}
+.navbar-container .left-nav svg {
+  width: 150px;
+  color: var(--light-black);
+  cursor: pointer;
+}
+
+.left-nav {
+  display: flex;
+  margin-left: 3em;
+  /* border: 2px solid rgb(135, 135, 169); */
+}
+
+.navbar-container .left-nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto 20px;
+  /* justify-content: space-around; */
+}
+
+.navbar-container .left-nav ul a {
+  text-decoration: none;
+  margin: 30px;
+  color: #585d71;
+  transition: 0.5s ease;
+}
+
+.navbar-container .left-nav ul a:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translate(5px);
+  color: var(--light-black);
+}
+
+/* Right Side NavBar started here  */
+
+.navbar-container .right-nav {
+  display: flex;
+
+  /* border: 2px solid #898094; */
+  margin-left: 238px;
+  width: 578px;
+  /* width: 200px; */
+}
+
+.navbar-container .right-nav svg {
+  width: 50px;  
+  cursor: pointer;
+}
+
+
+.navbar-container .right-nav .right-nav-content  {
+    display: flex;
+    gap: 50px;
+    margin: 18px 0 18px 154px;
+    
+}
+
+.navbar-container .right-nav .right-nav-content .upgrade-btn button{
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: var(--main-color);
+     border: none;
+     border-radius: 3px;
+     font-size: 12px;
+     font-family: var(--font-family);
+    transition: 0.3s ease;
+     cursor: pointer;
+     font-weight: bold;
+}
+
+.navbar-container .right-nav .right-nav-content .upgrade-btn button:hover{
+    box-shadow: var(--hover-shadow);
+  transform: translateY(-3px);
+  cursor: pointer;
+
+}
+
+
+.navbar-container .right-nav .right-nav-content  .search svg{
+
+    width: 20px;
+    margin: 9px 0px;
+
+}
+
+.navbar-container .right-nav .right-nav-content  .search svg:hover{
+    transform: scale(1.1);
+}
+
+
+.navbar-container .right-nav .right-nav-content .signup button{
+    width: 90px;
+    height: 35px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.navbar-container .right-nav .right-nav-content .signup button:hover{
+    box-shadow: var(--box-shadow);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* form css start here */
+:root {
+  --main-color: #6400e4;
+  --box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 00.34);
+  --hover-shadow: 0px 4px 4px 0px rgba(3, 3, 3, , 0.561);
+  --nav-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  --light-black: #141c3a;
+  --font-family: "Nunito", sans-serif;
+}
+
+main {
+  font-family: "Nunito", sans-serif;
+
+  width: 32%;
+  margin: 100px auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+form label {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+form input[type="text"],
+input[type="password"] {
+  height: 50px;
+  border: 0.5px solid #b8b8b85d;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+form a {
+  margin: 20px 0;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+form input[type="submit"] {
+  height: 50px;
+  background-color: var(--main-color);
+  font-size: 20px;
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-3px);
+}
+
+.footer h3 {
+  font-size: 16px;
+
+  opacity: 0.9;
+  margin: 26px 0;
+}
+
+.images {
+  display: flex;
+  height: 5vh;
+  /* border: 2px solid salmon; */
+
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: -9px;
+}
+
+.images img {
+  width: 15%;
+  border: 1px solid #e7e7e7;
+  padding: 12px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.images img:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.footer a {
+  float: right;
+  color: var(--main-color);
+  margin: 22px 0;
+  padding-right: 9px;
+  text-decoration: none;
+}
+
+
+   
